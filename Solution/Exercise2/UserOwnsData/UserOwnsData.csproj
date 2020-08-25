@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UserSecretsId>aspnet-UserOwnsData-4635C0F8-934C-4E4D-9024-F5D07A239315</UserSecretsId>
+    <WebProject_DirectoryAccessLevelKey>0</WebProject_DirectoryAccessLevelKey>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Identity.Web" Version="0.2.3-preview" />
+    <PackageReference Include="Microsoft.Identity.Web.UI" Version="0.2.3-preview" />
+    <PackageReference Include="Microsoft.PowerBi.Api" Version="3.14.0" />
+  </ItemGroup>
+
+</Project>
