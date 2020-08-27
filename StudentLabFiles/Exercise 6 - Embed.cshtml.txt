@@ -48,7 +48,6 @@
 </div>
 
 @section Scripts {
-  <script src="~/lib/powerbi-client/dist/powerbi.js"></script>
   <script>
     var viewModel = @Html.Raw(Model);
   </script>
