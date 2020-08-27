@@ -31,9 +31,9 @@ namespace UserOwnsData {
     public void ConfigureServices (IServiceCollection services) {
 
       services
-        .AddMicrosoftWebAppAuthentication (Configuration)
-        .AddMicrosoftWebAppCallsWebApi (Configuration, PowerBiServiceApi.RequiredScopes)
-        .AddInMemoryTokenCaches ();
+        .AddMicrosoftIdentityWebAppAuthentication(Configuration)
+        .EnableTokenAcquisitionToCallDownstreamApi(PowerBiServiceApi.RequiredScopes)
+        .AddInMemoryTokenCaches();
 
       services.AddScoped (typeof (PowerBiServiceApi));
 
@@ -47,7 +47,6 @@ namespace UserOwnsData {
       mvcBuilder.AddMicrosoftIdentityUI ();
 
       services.AddRazorPages ();
-
     }
 
     // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
